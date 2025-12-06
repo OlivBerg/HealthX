@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Health — Employee Dashboard</title>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="healthx.css">
+</head>
+
+<body>
+    <div class="container" role="main">
+        <header>
+            <div class="brand">
+                <div class="logo" aria-hidden="true">HX</div>
+            </div>
+            <div>
+                <h1 id="pageTitle">My Health</h1>
+                <p class="lead" id="userGreeting">Welcome, <strong>Fayz Bergeron </strong> — check your recent health
+                    stats
+                    and visits.</p>
+            </div>
+        </header>
+
+        <div class="grid" aria-labelledby="pageTitle">
+
+            <!-- LEFT COLUMN -->
+            <section class="card" aria-label="Health summary">
+                <h2>Latest Overview</h2>
+
+                <div class="stats">
+                    <div class="stat" role="group" aria-label="Latest blood pressure">
+                        <div class="value">120 / 78</div>
+                        <div class="label">Blood Pressure</div>
+                    </div>
+
+                    <div class="stat" role="group" aria-label="Latest heart rate">
+                        <div class="value">78 bpm</div>
+                        <div class="label">Heart Rate</div>
+                    </div>
+
+                    <div class="stat" role="group" aria-label="Latest blood glucose">
+                        <div class="value">5.6 mmol/L</div>
+                        <div class="label">Blood Glucose</div>
+                    </div>
+                </div>
+
+                <h2 style="margin-top:14px">Recent Vitals</h2>
+                <table aria-describedby="vitalsDesc">
+                    <caption id="vitalsDesc" class="small muted">Last 5 recorded vitals</caption>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Type</th>
+                            <th>Value</th>
+                            <th class="small">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dec 4, 2025 — 09:12</td>
+                            <td>Blood Pressure</td>
+                            <td><strong>120/78</strong></td>
+                            <td class="small">At-home reading</td>
+                        </tr>
+                        <tr>
+                            <td>Dec 3, 2025 — 14:05</td>
+                            <td>Heart Rate</td>
+                            <td><strong>82 bpm</strong></td>
+                            <td class="small">After walk</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2 style="margin-top:14px">Recent Visits</h2>
+                <div class="list" role="list">
+                    <div class="item card" role="listitem">
+                        <div style="flex:1;">
+                            <div style="font-weight:700">Home Visit — Nursing</div>
+                            <div class="small muted">Nov 28, 2025 • Nurse: A. Smith</div>
+                        </div>
+                        <div class="small pill">Completed</div>
+                    </div>
+
+                    <div class="item card" role="listitem">
+                        <div style="flex:1;">
+                            <div style="font-weight:700">Telehealth Consultation</div>
+                            <div class="small muted">Nov 15, 2025 • Dr. L. Wong</div>
+                        </div>
+                        <div class="small pill">Completed</div>
+                    </div>
+                </div>
+
+                <details style="margin-top:12px;">
+                    <summary>Medications & Allergies</summary>
+                    <div class="panel small">
+                        <p><strong>Current Medications:</strong> Lisinopril 10 mg (daily)</p>
+                        <p><strong>Allergies:</strong> Penicillin (rash)</p>
+                    </div>
+                </details>
+            </section>
+
+            <!-- RIGHT COLUMN -->
+            <aside class="right">
+                <div class="card">
+                    <h2>Quick Actions</h2>
+                    <div class="small muted">Download or share your records</div>
+                    <div class="actions">
+                        <button class="btn">Download PDF</button>
+                        <button class="btn secondary">Share with clinician</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Messages</h2>
+                    <div class="small muted">Recent messages from your care team</div>
+                    <div class="list" style="margin-top:10px;">
+                        <div class="item">
+                            <div>
+                                <div style="font-weight:700">Lab results available</div>
+                                <div class="small muted">Nov 30, 2025 • Lab</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div style="font-weight:700">Flu shot recommended</div>
+                                <div class="small muted">Nov 10, 2025 • Clinic</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Privacy</h2>
+                    <p class="small muted">Your data is private and stored securely.</p>
+                </div>
+            </aside>
+
+        </div>
+
+        <footer>
+            <p>HealthX • Last sync: Dec 5, 2025</p>
+        </footer>
+    </div>
+</body>
+
+</html>
